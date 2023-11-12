@@ -1,5 +1,5 @@
 // QUESTION 1
-   // reqs: 1) create array, 2) subtract frist from last, 
+   // reqs: 1) create array, 2) subtract first from last, 
    // 3) add new element, 4) subtract first from last,
    // 5) use loop to calculate average age
 
@@ -31,7 +31,6 @@ console.log("First element was subtracted from the new last element, resulting i
 console.log("The average of the ages in this array was", findAverage(agesArray)); //sum1=254/length=9 = 28.22...
 
 
-
 // QUESTION 2
    //reqs: 1) create array, 2) use loop to calculate average letters in name,
    // 3) loop to concatenate all names, separated by spaces
@@ -54,7 +53,7 @@ console.log("The number of characters in the array is", count); //23 characters
 console.log("The number of names in the array is", namesArray.length); //6 names
    let namesAverage= count/(namesArray.length); //23/6=3.83...
       //finds the average number of letters per name
-console.log("The average number of letters per name in this array is", namesAverage);
+console.log("The average number of letters per name in this array are", namesAverage, "letters.");
 console.log("This is the joined array: ", namesChar);
    //referring back to joined array I used earlier to find the 
    // number of characters in the array
@@ -81,8 +80,8 @@ console.log("Question 4: How do you access the first element of any array?")
 
 
 //QUESTION 5
-   //reqs: 1) create array, 2) write loop that uses previous array
-   // to make new array of name lengths
+   //reqs: 1) create array, 2) write loop that uses previous namesArray
+   // to make new array for the name lengths
 console.log("Question 5:");
    let nameLengths = namesArray.map(function(element) {
       //created new array (nameLengths) using previous array (namesArray)
@@ -148,7 +147,7 @@ console.log("Question 9:");
       for (let i=0; i<array.length; i++) {
          //for loop to count numbers up to array length
       sum3 += array[i];
-         //adds the array numbers together
+         //adds the array numbers together; addition assignment
       }
          if (sum3>100) {
             return true;
@@ -156,7 +155,7 @@ console.log("Question 9:");
             return false;
          }
    }
-let exampleArray = [1,2,3,4,5,6,7,1,9,3,5,3,4,7,5];
+let exampleArray = [1,2,3,4,5,6,7,1,9,3,5,300,4,7,5];
    // example that I can change values to change my answers
 console.log("This array's sum being larger than 100 is:", sumGreaterThan100(exampleArray));
 
@@ -179,8 +178,8 @@ console.log("Question 10:");
                return false;
             }
       }
-   let array1 = [30,40];
-   let array2 = [50,1];
+   let array1 = [30,40]; //35
+   let array2 = [50,1]; //25.5
 console.log("array1 is greater than array2:", greaterAverage(array1, array2));
 
 
@@ -201,5 +200,5 @@ console.log("Question 12:");
          }
       }
       let isHotOutisde = true;
-      let moneyInPocket = 13;
+      let moneyInPocket = 14;
    console.log("I will buy a drink", willBuyDrink(isHotOutisde, moneyInPocket));
