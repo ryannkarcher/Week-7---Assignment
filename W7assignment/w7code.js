@@ -50,7 +50,7 @@ console.log("Question 2:");
             //counts
 }
 console.log("The number of characters in the array is", count); //23 characters
-console.log("The number of names in the array is", namesArray.length); //6 names
+// console.log("The number of names in the array is", namesArray.length); //6 names
    let namesAverage= count/(namesArray.length); //23/6=3.83...
       //finds the average number of letters per name
 console.log("The average number of letters per name in this array are", namesAverage, "letters.");
